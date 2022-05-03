@@ -6,7 +6,7 @@
 /*   By: leon <lmarquar@student.42wolfsburg.de      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/29 21:20:43 by leon              #+#    #+#             */
-/*   Updated: 2022/05/03 12:18:43 by leon             ###   ########.fr       */
+/*   Updated: 2022/05/03 12:23:59 by leon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ int	m_printf_func(t_phil *p, int i)
 
 	pthread_mutex_lock(p->m_printf);
 	x = check_if_dead(p);
-	if (x && i != 4 || x > 1)
+	if ((x && i != 4) || x > 1)
 	{
 		pthread_mutex_unlock(p->m_printf);
 		return (1);
