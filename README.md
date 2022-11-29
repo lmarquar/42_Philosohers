@@ -22,3 +22,5 @@ to eating again.
 philosopher ate atleast this many times.
  
 ./philo number_of_philosophers time_to_die time_to_eat time_to_sleep [number_of_times_each_philosopher_must_eat]
+
+Hope this explained it well enough, if not just google "the dining problem".
